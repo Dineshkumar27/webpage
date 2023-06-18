@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Registration Form</h1>
+    <hr>
+    <form action="thanks.html">
+        <label for="first">First Name</label>
+        <input type="text" name="firstname" minlength="1" maxlength="10" id="first" required/>
+        <br>
+        <label for="last">Last Name</label>
+        <input type="text" name="lastname" id="last" placeholder="Enter lastname"/>
+        <br>
+        <label for="gender">gender</label>
+        <input type="radio" id="gender" value="male" name="gen">Male
+        <input type="radio" id="gender" value="female" name="gen">Female
+        <br>
+        <label for="hobbies">Hobbies</label>
+        <input type="checkbox" name="hobbies" id="hobbies" value="reading" checked/>reading
+        <input type="checkbox" name="hobbies" id="hobbies" value="writing"/>writing
+        <br>
+        <br>
+        <label for="address">Address</label>
+        <textarea rows="4" cols="80" name="address" id="address"></textarea>
+        <br>
+        email:<input type="email">
+        <select name="country" multiple>
+            <option value="">Select</option>
+            <option value="IND">India</option>
+            <option value="AUS" selected>Australia</option>
+            <option value="USA">America</option>
+            <option value="MAL">Malaysia</option>
+        </select>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
